@@ -1,0 +1,138 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid red;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 98.8vw;
+    grid-template-rows: 15vh 70vh 15vh;
+    border: 1px solid blue;
+    margin: 0;
+    background-color: #FEFAF6;
+}
+
+header {
+    grid-column: 1/13;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #102C57;
+}
+
+main {
+    grid-column: 1/13;
+    grid-row: 2/3;
+}
+
+footer {
+    grid-column: 1/13;
+    grid-row: 3/4
+}
+
+header > img {
+    height: 8vh;
+    width: auto;
+}
+
+.menu {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.redesImg > img {
+    height: 5vh;
+}
+
+.menu > li a{
+    text-decoration: none;
+    color: #EADBC8;
+}
+
+li a:hover{
+    color: #DAC0A3;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+#presentacion {
+    display: grid;
+    grid-template-columns: 24.7vw 24.7vw 24.7vw 24.7vw;
+    grid-template-rows: 10vh 10vh 10vh 10vh;
+}
+
+#avatar {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+#presentacion > h1 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    text-align: center;
+    padding-right: 2rem;
+}
+
+#presentacion > p {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    justify-content: center;
+    text-align: center;
+}
+
+#presentacion > ul {
+    grid-column: 2/5;
+    grid-row: 3/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#presentacion > ul > li {
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #DAC0A3;
+    border-radius: 1rem;
+}
+
+#presentacion > ul > li > h3 {
+    display: block;
+    font-size: 2rem;
+    height: auto;
+    color: #102C57;
+    margin: 0;
+}
+
+.lenguajes {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.lenguajes > li {
+    margin-right: 3rem;
+    justify-content: space-between;
+    padding: 0;
+}
+
+div > img {
+    height: 100%;
+}
